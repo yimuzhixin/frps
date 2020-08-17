@@ -36,10 +36,10 @@ wget https://raw.githubusercontent.com/yimuzhixin/frps/master/frps_linux_uninsta
 
 #### 修改 frps_linux_install.sh 脚本
 `FRP_VERSION="0.30.0"` 可根据原版项目更新自行修改为最新版本  
-`REPO="yimuzhixin/frps"` 由于 **fork** 到你自己的仓库,需修改`stilleshan`为你的GitHub账号ID.
+`REPO="yimuzhixin/frps"` 由于 **fork** 到你自己的仓库,需修改`yimuzhixin`为你的GitHub账号ID.
 
 #### 运行一键脚本
-修改以下脚本链接中的`stilleshan`为你的GitHub账号ID后,运行即可.
+修改以下脚本链接中的`yimuzhixin`为你的GitHub账号ID后,运行即可.
 ```shell
 wget https://raw.githubusercontent.com/yimuzhixin/frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
 ```
@@ -81,7 +81,7 @@ docker run -d --name=frps --restart=always \
     -p 443:443 \
     -p 7000:7000 \
     -p 7500:7500 \
-    stilleshan/frps
+    yimuzhixin/frps
 ```
 > 以上命令 -v 挂载的目录是以 git clone 本仓库为例,也可以在任意位置手动创建 frps.ini 文件,并修改命令中的挂载路径.
 
