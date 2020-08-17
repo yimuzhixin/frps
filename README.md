@@ -2,8 +2,8 @@
 ## 项目简介
 基于 [fatedier/frp](https://github.com/fatedier/frp) 原版 frp 内网穿透服务端 frps 的一键安装卸载脚本和 docker 镜像.支持 Linux 服务器和 docker 等多种环境安装部署.
 
-- GitHub [stilleshan/frps](https://github.com/stilleshan/frps)
-- Docker [stilleshan/frps](https://hub.docker.com/r/stilleshan/frps)
+- GitHub [yimuzhixin/frps](https://github.com/yimuzhixin/frps)
+- Docker [yimuzhixin/frps](https://hub.docker.com/r/yimuzhixin/frps)
 
 ## 使用说明
 由于 frps 服务端需要配置参数,本脚本为原版 frps.ini ,安装完毕后请自行编辑 frps.ini 配置端口,密码等相关参数并重启服务.同时你也可以 fork 本仓库后自行修改 frps.ini ,在进行一键安装也非常方便.后期也可自行配置 frps.ini 和调整 frps 的版本.
@@ -11,7 +11,7 @@
 ### 一键脚本(先运行脚本,在自行修改 frps.ini 文件.)
 安装
 ```shell
-wget https://raw.githubusercontent.com/stilleshan/frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
+wget https://raw.githubusercontent.com/yimuzhixin/frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
 ```
 
 使用
@@ -24,7 +24,7 @@ sudo systemctl restart frps
 
 卸载
 ```shell
-wget https://raw.githubusercontent.com/stilleshan/frps/master/frps_linux_uninstall.sh && chmod +x frps_linux_uninstall.sh && ./frps_linux_uninstall.sh
+wget https://raw.githubusercontent.com/yimuzhixin/frps/master/frps_linux_uninstall.sh && chmod +x frps_linux_uninstall.sh && ./frps_linux_uninstall.sh
 ```
 
 
@@ -36,17 +36,17 @@ wget https://raw.githubusercontent.com/stilleshan/frps/master/frps_linux_uninsta
 
 #### 修改 frps_linux_install.sh 脚本
 `FRP_VERSION="0.30.0"` 可根据原版项目更新自行修改为最新版本  
-`REPO="stilleshan/frps"` 由于 **fork** 到你自己的仓库,需修改`stilleshan`为你的GitHub账号ID.
+`REPO="yimuzhixin/frps"` 由于 **fork** 到你自己的仓库,需修改`stilleshan`为你的GitHub账号ID.
 
 #### 运行一键脚本
 修改以下脚本链接中的`stilleshan`为你的GitHub账号ID后,运行即可.
 ```shell
-wget https://raw.githubusercontent.com/stilleshan/frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
+wget https://raw.githubusercontent.com/yimuzhixin/frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
 ```
 #### 卸载脚本
 frps_linux_uninstall.sh 卸载脚本为通用脚本,可直接运行,也可同上方式修改链接后运行.
 ```shell
-wget https://raw.githubusercontent.com/stilleshan/frps/master/frps_linux_uninstall.sh && chmod +x frps_linux_uninstall.sh && ./frps_linux_uninstall.sh
+wget https://raw.githubusercontent.com/yimuzhixin/frps/master/frps_linux_uninstall.sh && chmod +x frps_linux_uninstall.sh && ./frps_linux_uninstall.sh
 ```
 
 ### frps相关命令
@@ -68,7 +68,7 @@ sudo systemctl stop frps
 
 先 **git clone** 本仓库,并正确配置 **frps.ini** 文件.
 ```shell
-git clone https://github.com/stilleshan/frps.git
+git clone https://github.com/yimuzhixin/frps.git
 # git clone 本仓库
 vi /root/frps/frps.ini
 # 配置 frps.ini 文件
@@ -99,8 +99,6 @@ docker restart frps
 
 ## 相关链接
 更多frp相关信息可参考我的博客
-- Blog [www.ioiox.com](https://www.ioiox.com)
-- GitHub [stilleshan/frps](https://github.com/stilleshan/frps)
-- Docker [stilleshan/frps](https://hub.docker.com/r/stilleshan/frps)
+- GitHub [yimuzhixin/frps](https://github.com/yimuzhixin/frps)
+- Docker [yimuzhixin/frps](https://hub.docker.com/r/yimuzhixin/frps)
 - 原版frp项目 [fatedier/frp](https://github.com/fatedier/frp)
-- [CentOS 7 安装配置frp内网穿透服务器端教程](https://www.ioiox.com/archives/5.html)
